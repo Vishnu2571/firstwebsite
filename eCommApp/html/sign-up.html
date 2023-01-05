@@ -1,0 +1,108 @@
+<html>
+	<head>
+		<title>
+			Customer Sign Up Form
+		</title>
+		<script src="../js/sign-up.js"></script>
+		<link rel="stylesheet" href="../css/styles.css">
+	</head>
+	<body>
+		<table align="center">
+			<tr>
+				<td colspan="2">
+					<img src="../images/mylogo.png" alt="Eficens Logo" width="200" height="100"><br><br>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<a href="../index.html">Home</a>
+				</td>
+				<td align="center">
+					<a href="login.html">Login</a>
+				</td>
+			</tr>
+		</table>
+		
+		<div align="center" id="successMessage"></div><br>
+		<div align="center" id="errors"></div><br>
+		<form id="signUpFrom">
+			<table align="center">
+				<tr>
+					<td><label for="fname">First name:</label></td>
+					<td><input type="text" id="fname" name="fname"></td>
+				</tr>
+				<tr>
+					<td><label for="lname">Last name:</label></td>
+					<td><input type="text" id="lname" name="lname"></td>
+				</tr>
+				<tr>
+					<td><label for="dob">Date Of Birth:</label></td>
+					<td><input type="date" id="dob" name="dob"></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email Id:</label></td>
+					<td><input type="text" id="email" name="email"></td>
+				</tr>
+				<tr>
+					<td><label for="phone">Phone Number:</label></td>
+					<td><input type"text" id="phone" name="phone"></td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label for="gender">Select Gender:</label></td>
+					<td>
+						<input type="radio" id="female" name="gender" value="Female">
+						<label for="female">Female</label><br>
+						<input type="radio" id="male" name="gender" value="Male">
+						<label for="male">Male</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="phone">Interested In:</label>
+					</td>
+					<td>
+						<input type="checkbox" id="cloths" name="cloths" value="Cloths">
+						<label for="cloths"> Cloths</label><br>
+						<input type="checkbox" id="electronics" name="electronics" value="Electronics">
+						<label for="electronics"> Electronics</label><br>
+						<input type="checkbox" id="books" name="books" value="Books">
+						<label for="books"> Books</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="country">Home Country:</label></td>
+					<td>
+						<select name="country" id="country">
+							<option value="">Select Country</option>
+							<option value="USA">USA</option>
+							<option value="Nepal">Nepal</option>
+							<option value="Sri Lanka">Sri Lanka</option>
+							<option value="India">India</option>
+							<option value="Pakistan">Pakistan</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="password">Password:</label></td>
+					<td><input type="password" id="password" name="password"></td>
+				</tr>	
+				<tr>
+					<td><label for="confirmPassword">Confirm Password:</label></td>
+					<td><input type="password" id="confirmPassword" name="confirmPassword"></td>
+				</tr>
+				<tr>
+					<td><label for="shippingAddress">Shipping Address:</label></td>
+					<td>
+						<textarea id="shippingAddress" rows="5" cols="30" name="shippingAddress"></textarea>
+					</td>
+				</tr>
+			</table><br><br>
+			<div align="center">
+				<button class="btnGreen" type="button" onclick="validateForm();">Sign Up</button>
+				<input class="btnGreen" type="button" onclick="confirmClearFields();" value="Clear All Fields">
+			</div>
+		</form>
+	</body>
+</html>
